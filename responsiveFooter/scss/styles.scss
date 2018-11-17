@@ -1,0 +1,220 @@
+#footerCustom {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-height: 302px;
+    color: #ffffff;
+    background: #3D596B;
+
+}
+
+.leftGrid {
+    display: grid;
+    grid-template-columns: 20% 30% 20% 30%;
+    background: #3D596B;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    padding-left: 2em;
+
+}
+
+.rightGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: #3D596B;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    padding-right: 2em;
+}
+
+#avaLogo {
+    height: 14px;
+    width: auto;
+}
+
+
+
+
+
+.item1 {
+    display: inline-block;
+}
+
+.item2 {
+    display: inline-block;
+}
+
+.item3 {
+    display: inline-block;
+    position: relative;
+
+    p {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+.item4 {
+    display: inline-block;
+    position: relative;
+
+    p {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+.item5 {
+
+    position: relative;
+    display: inline-block;
+
+    a {
+        position: absolute;
+        right: 0;
+        color: #ffffff;
+        bottom: 0;
+        vertical-align: middle;
+    }
+
+}
+
+
+.textFooter {
+    display: inline-block;
+    border: #69889D 1px;
+    border-style: none none none solid;
+    padding-left: 1em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    p {
+        margin-top: 0;
+    }
+
+    a {
+        color: rgba(250, 255, 255, 0.7);
+        ;
+        text-decoration: none;
+    }
+}
+
+.logoFooter {
+    display: inline-block;
+
+
+    img {
+        display: block;
+        max-width: 140px;
+        min-width: 120px;
+        max-height: 95px;
+        width: auto;
+        height: auto;
+
+
+    }
+
+
+
+}
+
+.footerText {
+    font-size: 13px !important;
+    line-height: 1 !important;
+    // margin-left: 1em;
+
+
+
+
+}
+
+.footerTextIcon {
+    // margin: 12px;
+}
+
+.footerTextBold {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+
+}
+
+@media only screen and (max-width: 1180px) {
+    .rightGrid {
+
+        display: grid;
+        text-align: center;
+
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr;
+
+        .item3 {
+            display: inline-block;
+            position: relative;
+
+            p {
+                position: relative;
+
+            }
+        }
+
+        .item4 {
+            display: inline-block;
+            position: relative;
+
+            p {
+                position: relative;
+            }
+        }
+
+        .item5 {
+            position: relative;
+            display: inline-block;
+
+            a {
+                position: relative;
+                vertical-align: middle;
+            }
+        }
+
+
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+    #footerCustom {
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+
+    .rightGrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .leftGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+    }
+
+    .rightGrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .textFooter {
+        display: inline-block;
+        border: #69889D 1px;
+        border-style: none none none none;
+        padding: 1em;
+    }
+}
